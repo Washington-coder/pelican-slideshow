@@ -2,15 +2,6 @@
 
 A web application that displays a photo slideshow of pelicans using the Unsplash API.
 
-## Features
-
-- **Auto-play slideshow** with 2-second intervals
-- **Manual navigation** with Previous/Next controls
-- **Image caching** - keeps the 5 most recent images loaded
-- **Loading states** - visual feedback while fetching images
-- **Error handling** - graceful error messages including "No more images!" when reaching the beginning
-- **Photographer attribution** - proper credit to Unsplash photographers
-
 ## Tech Stack
 
 - **React 19** - UI library
@@ -95,3 +86,29 @@ npm run test:coverage
 | `npm run test:run` | Run tests once |
 | `npm run test:coverage` | Run tests with coverage |
 | `npm run lint` | Run ESLint |
+
+## What I Built
+
+This slideshow application implements all required functionality:
+
+1. **Initial image fetch** - When the page loads, it fetches and displays a pelican image
+2. **Play** - Auto-advances images every 2 seconds
+3. **Pause** - Stops auto-advance
+4. **Previous** - Shows the previous image from cache, or displays "No more images!" if at the beginning
+5. **Next** - Shows the next cached image or fetches a new one
+6. **Image caching** - Maintains the 5 most recent images
+7. **Loading/Error states** - Visual feedback for API calls and errors
+8. **Zod validation** - All API responses are validated with Zod schemas
+
+## What I'd Do Next With More Time
+
+1. **Keyboard navigation** - Arrow keys for previous/next, spacebar for play/pause
+2. **Touch gestures** - Swipe support for mobile devices
+3. **Image preloading** - Prefetch the next image for smoother transitions
+4. **Transition animations** - Fade or slide transitions between images
+5. **Fullscreen mode** - Maximize the viewing experience
+6. **Image download** - Option to download the current image
+7. **Share functionality** - Share current image to social media
+8. **Progress indicator** - Visual timer for auto-play countdown
+9. **Responsive design improvements** - Better mobile optimization
+10. **Error recovery** - Retry button for failed API calls
