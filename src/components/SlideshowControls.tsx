@@ -34,6 +34,7 @@ export function SlideshowControls({
     bg-blue-500 hover:bg-blue-600 text-white
     focus:ring-blue-400
     active:scale-95
+    cursor-pointer
   `;
 
   const secondaryButtonClass = `
@@ -41,6 +42,7 @@ export function SlideshowControls({
     bg-white/20 hover:bg-white/30 text-white
     focus:ring-white/50
     active:scale-95
+    cursor-pointer
   `;
 
   return (

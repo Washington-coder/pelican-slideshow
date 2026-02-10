@@ -94,6 +94,7 @@ export function useSlideshow(): [SlideshowState, SlideshowActions] {
     // If we're not at the end of cached images, just move forward
     if (currentIndex < images.length - 1) {
       setCurrentIndex((prev) => prev + 1);
+      setError(null);
     } else {
       // Fetch a new image
       await fetchNewImage();
