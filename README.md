@@ -23,7 +23,7 @@ A web application that displays a photo slideshow of pelicans using the Unsplash
 ### 1. Clone the repository
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/Washington-coder/pelican-slideshow.git
 cd pelican-slideshow
 ```
 
